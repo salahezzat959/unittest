@@ -10,12 +10,12 @@ class FactorialTest extends TestCase
         $res1 = $a->fact(0);
         $res2 = $a->fact(1);
         $res3 = $a->fact(5);
-        $res4 = $a->fact($x);
+        $n = random_int (3,1000);
+        $res4 = $a->fact($n);
         $res5 = $a->fact(-3);
         $res6 = $a->fact(1.5);
         $res7 = $a->fact(false);
         $res8 = $a->fact('abc');
-        $x = random_int (3,1000);
         $this->assertEquals(1, $res1);
         $this->assertEquals(1, $res2);
         $this->assertEquals(120, $res3);
